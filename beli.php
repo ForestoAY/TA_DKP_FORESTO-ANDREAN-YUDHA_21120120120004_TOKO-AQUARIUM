@@ -9,7 +9,7 @@
     <form action="hasil.php" method="get">  
         <label for="nama">Nama:</label>
             <input name="nama" >
-            </br></br>
+            <br><br>
             <label for="alamat">Alamat :</label>
             <input name="alamat">
             <br><br>
