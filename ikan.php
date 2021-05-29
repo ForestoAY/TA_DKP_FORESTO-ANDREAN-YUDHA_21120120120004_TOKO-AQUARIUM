@@ -2,11 +2,23 @@
 <html>
 <head>
     <title>Tugas Akhir Praktikum DKP</title>
+    <link rel="stylesheet" href="style.css">
 <head>
 
 <body>
-    <caption>Aquarium Store</caption><hr>
-    <form action="menu.php" method="get">
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>Aquarium Store</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="http://localhost/Tugas%20Akhir%20PDKP/menu.php#home">Home</a></li>
+                    <li><a href="http://localhost/Tugas%20Akhir%20PDKP/menu.php#lihatikan">Lihat ikan</a></li>
+                    <li><a href="http://localhost/Tugas%20Akhir%20PDKP/menu.php#pesanan">Pesanan</a></li>
+                    <li><a href="http://localhost/Tugas%20Akhir%20PDKP/menu.php#kontak">Kontak</a></li>
+                </ul>
+            </div>
+    </nav>
+
     <?php
         class JenisIkan{
             private $ikan;
@@ -51,13 +63,12 @@
     echo $list->getikan() . " seharga ". $list->getharga() ."<br>";
 
     $list->setikan("Ikan Discus"); 
-    $list->setharga("Rp 75.500");
+    $list->setharga("Rp 75.000");
     echo $list->getikan() . " seharga ". $list->getharga() ."<br>";
 
     $list->setikan("Ikan Arwana"); 
     $list->setharga("Rp 200.000");
     echo $list->getikan() . " seharga ". $list->getharga() ."<br><br>";
     ?>
-    <input type="submit" name="Kembali" value="Kembali">
-    </form>
 </body>
+</html>>
