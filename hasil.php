@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Tugas Akhir Praktikum DKP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleweb.css">
 <head>
 
 <body>
     <nav>
         <div class="wrapper">
-            <div class="logo"><a href=''>Aquarium Store</a></div>
+            <div class="logo"><a href="http://localhost/Tugas%20Akhir%20PDKP/menu.php">Aquarium Store</a></div>
             <div class="menu">
                 <ul>
                     <li><a href="http://localhost/Tugas%20Akhir%20PDKP/menu.php#home">Home</a></li>
@@ -61,7 +61,7 @@
                 <td><?php echo $jumlah; ?></td>
             </tr>
             <tr>
-                <td>Saldo Akhir</td>
+                <td>Sisa Saldo</td>
                 <td><?php
         if(empty($jumlah && $saldo)){
             echo "Mohon diisi dengan benar";
@@ -124,6 +124,10 @@
                     }
                 }
         ?>
-</br>
+<br><br>
+
+<form action="beli.php">
+    <input type="submit" name="Pesan" value="Pesan lagi">
+</form>
 </body>
 </html>
