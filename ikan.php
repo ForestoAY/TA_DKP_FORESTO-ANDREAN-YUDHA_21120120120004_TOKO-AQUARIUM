@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Tugas Akhir Praktikum DKP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleweb.css">
 <head>
 
 <body>
     <nav>
         <div class="wrapper">
-            <div class="logo"><a href=''>Aquarium Store</a></div>
+            <div class="logo"><a href="http://localhost/Tugas%20Akhir%20PDKP/menu.php">Aquarium Store</a></div>
             <div class="menu">
                 <ul>
                     <li><a href="http://localhost/Tugas%20Akhir%20PDKP/menu.php#home">Home</a></li>
@@ -18,7 +18,7 @@
                 </ul>
             </div>
     </nav>
-
+    <h1>
     <?php
         class JenisIkan{
             private $ikan;
@@ -70,5 +70,6 @@
     $list->setharga("Rp 200.000");
     echo $list->getikan() . " seharga ". $list->getharga() ."<br><br>";
     ?>
+    </h1>
 </body>
-</html>>
+</html>
