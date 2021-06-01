@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Tugas Akhir Praktikum DKP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleweb.css">
 <head>
 
 <body>
     <nav>
         <div class="wrapper">
-            <div class="logo"><a href=''>Aquarium Store</a></div>
+            <div class="logo"><a href="http://localhost/Tugas%20Akhir%20PDKP/menu.php">Aquarium Store</a></div>
             <div class="menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -29,19 +29,36 @@
 
         <section id="lihatikan">
             <div class="kolom">
-                <p class="deskripsi">Jenis ikan yang kami jual</p>
-                <h2>Ikan Cupang</h2>
+                <h2>Ikan yang kami jual</h2>
+                <div class="deskripsi">
+                <p>Ikan Cupang</p>
                 <img src="https://s3.gifyu.com/images/ikan-cupang.jpg"/>
-                <h2>Ikan Guppy</h2>
+                </div>
+
+                <div class="deskripsi">
+                <p>Ikan Guppy</p>
                 <img src="https://s3.gifyu.com/images/ikan-guppy.jpg"/>
-                <h2>Ikan Mas Koki</h2>
+                </div>
+
+                <div class="deskripsi">
+                <p>Ikan Mas Koki</p>
                 <img src="https://s3.gifyu.com/images/ikan-mas-koki.jpg"/>
-                <h2>Ikan Koi</h2>
+                </div>
+
+                <div class="deskripsi">
+                <p>Ikan Koi</p>
                 <img src="https://s3.gifyu.com/images/ikan-koi.jpg"/>
-                <h2>Ikan Discus</h2>
-                <img src="https://s3.gifyu.com/images/ikan-discus.md.jpg"/>
-                <h2>Ikan Arwana</h2>
+                </div>
+
+                <div class="deskripsi">
+                <p>Ikan Discus</p>
+                <img src="https://s3.gifyu.com/images/ikan-discus.jpg"/>
+                </div>
+
+                <div class="deskripsi">
+                <p>Ikan Arwana</p>
                 <img src="https://s3.gifyu.com/images/ikan-arwana.jpg"/>
+                </div>
             </div>
         
         </section>
@@ -58,7 +75,7 @@
             </div>
             <div class="tengah">
                 <div class="kolom">
-                    <p class="deskripsi">Penasaran dengan harganya ? Yok di cek sekarang</p>
+                    <p class="deskripsi">Penasaran dengan harganya ? Yok di cek sekarang !</p>
                 <div class="menupesanan">
                     <p><a href="http://localhost/Tugas%20Akhir%20PDKP/ikan.php" class="tekan">Cek harga</a></p>
                     
