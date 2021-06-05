@@ -63,10 +63,7 @@
             <tr>
                 <td>Sisa Saldo</td>
                 <td><?php
-        if(empty($jumlah && $saldo)){
-            echo "Mohon diisi dengan benar";
-        }
-        else{
+        
             //function
             function hasil($saldo, $harga, $jumlah){
                 return $saldo - $harga * $jumlah;
@@ -93,7 +90,7 @@
             }
             $hasil = hasil($saldo, $harga, $jumlah);
             echo $hasil;
-        }
+        
         ?></td>
         </table> <br>
         <?php
@@ -101,28 +98,24 @@
                 echo "Saldo kurang, pemesanan gagal.";
                 }
                 elseif($jumlah<=0){
-                    echo "Maaf, Anda belum memasukkan jumlah.";
+                    echo "Maaf, Anda memasukkan jumlah yang salah.";
                 }
                 elseif($hasil<0){
                     echo "Maaf uang Anda kurang, pemesanan gagal.";
                 }
                 else{
-                    if(empty($nama && $alamat)){
-                        echo "Pengiriman gagal, mohon nama dan alamat diisi dengan lengkap.";
+                    if($jk == 'pria')
+                    {
+                    $welcome = 'Terima kasih telah melakukan pemesanan, mas '.$nama; 
                     }
-                    else{
-                        if($jk == 'pria')
-                        {
-                        $welcome = 'Terima kasih telah melakukan pemesanan, mas '.$nama; 
-                        }
-                        else 
-                        {
-                        $welcome = 'Terima kasih telah melakukan pemesanan, mbak '.$nama;
-                        }             
-                        echo $welcome.". ";
-                        echo "Pesanan akan dikirim ke ".$alamat.".";
-                    }
+                    else 
+                    {
+                    $welcome = 'Terima kasih telah melakukan pemesanan, mbak '.$nama;
+                    }             
+                    echo $welcome.". ";
+                    echo "Pesanan akan dikirim ke ".$alamat.".";
                 }
+                
         ?>
 <br><br>
 
